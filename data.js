@@ -4,16 +4,15 @@ var accounts = ['Werner', 'Isolde', 'Gregory']
 var topics = ['Soccer', 'Basketball', 'Skating', 'Tennis', 'Running']
 var accountTopicSubscriptions = []
 
+showList = (type, listElementId) => {
+    var list = document.getElementById(listElementId)
 
-var showAccountList = () => {
-
-    var accountList = document.getElementById('accountList')
-
-    accounts.forEach(element => {
-        let accountItem = document.createElement('li')
-        accountItem.appendChild(document.createTextNode(element))
-        accountList.appendChild(accountItem)
+    type.forEach(element => {
+        let listItem = document.createElement('li')
+        listItem.appendChild(document.createTextNode(element))
+        list.appendChild(listItem)
     });
 }
 
-showAccountList()
+showList(accounts,'accountList')
+showList(topics,'topicList')
