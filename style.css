@@ -11,3 +11,8 @@ h1 {
     padding: 1rem 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+button {
+
+  pointer-events: none;
+}

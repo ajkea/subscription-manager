@@ -13,8 +13,9 @@
             <h2>Accounts</h2>
             <ul id="accountList"></ul>
             <h2>Topics</h2>
+            <p>Fill in you're email address to subscribe to the topics below.</p>
+            <input type="text" placeholder="email@address.com" id="emailInput" onkeyup="updateEmail(this.value)">
             <ul id="topicList"></ul>
-
             <h3>Admin overview</h3>
             <button onclick="addSubscription()">add random subscription</button>
             <ul id="accountTopicSubscriptionsList"></ul>
