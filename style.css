@@ -1,4 +1,5 @@
 .container {
+    font-family: Arial, Helvetica, sans-serif;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -13,6 +14,8 @@ h1 {
 }
 
 button {
-
   pointer-events: none;
+  background-color: #eee;
+  border-radius: 4px;
+  margin: 0 10px;
 }
