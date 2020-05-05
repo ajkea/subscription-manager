@@ -6,10 +6,14 @@ var accountTopicSubscriptions = []
 
 
 var showAccountList = () => {
-    document.getElementById('accountList').innerHTML = ` 
-<ul>
-${accounts.map(element => {
-        return (`<li> ${element} </li>`)
-    })}
-</ul>`
+
+    var accountList = document.getElementById('accountList')
+
+    accounts.forEach(element => {
+        let accountItem = document.createElement('li')
+        accountItem.appendChild(document.createTextNode(element))
+        accountList.appendChild(accountItem)
+    });
 }
+
+showAccountList()
